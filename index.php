@@ -2,6 +2,11 @@
 
 <html lang="en">
 <head>
+<?php
+session_start();
+require('includes/dbconx.php');
+$_SESSION['username'] = "";
+?>
     <meta charset="utf-8">
     <title>eRevive</title>
     <meta name="description" content="eRevive - Recycle your unwanted electronic goods today">
@@ -21,7 +26,11 @@
     <div class="col-md-12">
         <div class="jumbotron">
             <?php
+            if($_SESSION['username'] != ""){
+            include 'includes/secureHeader.php';
+            }else{
             include 'includes/header.php';
+            }
             ?>
         </div>
     </div>
