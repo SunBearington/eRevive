@@ -1,7 +1,7 @@
 <header>
     <div class="row">
         <div class="col-md-4">
-            <h1>eRevive</h1>
+            <a href="index.php"><h1>eRevive</h1></a>
         </div>
         <div class="col-md-8">
             <div class="form-group">

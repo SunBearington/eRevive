@@ -8,11 +8,11 @@ $db = "erevive";
 
 $con = mysqli_connect($host,$user,$pass,$db);
 
-//if($con){
+// if($con){
 //    echo "Connected to Database";
-//}else{
+// }else{
 //    echo "Connection error.";
-//}
+// }
 
 //mysqli_close($con);
 
