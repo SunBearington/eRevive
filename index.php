@@ -24,7 +24,7 @@ require('includes/dbconx.php');
     <div class="col-md-12">
         <div class="jumbotron">
             <?php
-            if($_SESSION['username'] != ""){
+            if(isset($_SESSION['username'])){
             include 'includes/secureHeader.php';
             }else{
             include 'includes/header.php';
@@ -39,7 +39,6 @@ require('includes/dbconx.php');
     <div class="col-md-8 center">
       <p>
         <?php
-        echo $_SESSION['username'];
         if(isset($_SESSION['status'])){
           echo $_SESSION['status'];
           unset($_SESSION['status']);

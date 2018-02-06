@@ -2,8 +2,8 @@
 require ('includes/dbconx.php');
 session_start();
 
-$username = mysqli_real_escape_string($_POST['username']);
-$password = mysqli_real_escape_string($_POST['password']);
+$username = mysqli_real_escape_string($con,$_POST['username']);
+$password = mysqli_real_escape_string($con, $_POST['password']);
 
 $sql = "SELECT username, password FROM users WHERE username = '$username'";
 $result = mysqli_query($con,$sql);
